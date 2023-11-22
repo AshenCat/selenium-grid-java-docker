@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-22T16:33:22 GMT" name="search-module" finished-at="2023-11-22T16:34:06 GMT" duration-ms="44364">
+    <groups>
+    </groups>
+    <test started-at="2023-11-22T16:33:22 GMT" name="search-test-java" finished-at="2023-11-22T16:33:49 GMT" duration-ms="27475">
+      <class name="com.searchmodule.tests.SearchTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6b4a4e18]" started-at="2023-11-22T16:33:22 GMT" name="setupDriver" finished-at="2023-11-22T16:33:39 GMT" duration-ms="17139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@6b4a4e18]" started-at="2023-11-22T16:33:39 GMT" name="search" finished-at="2023-11-22T16:33:47 GMT" duration-ms="7784" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #search_button_homepage
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '17-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d9b0ac27-22d6-4ef5-8eca-4371ef9d6227, findElement {using=id, value=search_button_homepage}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:debuggerAddress: 127.0.0.1:13175, moz:firefoxOptions: {}, moz:geckodriverVersion: 0.32.1, moz:headless: false, moz:platformVersion: 5.15.133.1-microsoft-standa..., moz:processID: 139, moz:profile: /tmp/rust_mozprofiletEvvA3, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidi: ws://172.21.0.4:4444/sessio..., se:cdp: ws://172.21.0.4:4444/sessio..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://172.21.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9b0ac27-22d6-4ef5-8eca-4371ef9d6227]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #search_button_homepage
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '17-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d9b0ac27-22d6-4ef5-8eca-4371ef9d6227, findElement {using=id, value=search_button_homepage}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:debuggerAddress: 127.0.0.1:13175, moz:firefoxOptions: {}, moz:geckodriverVersion: 0.32.1, moz:headless: false, moz:platformVersion: 5.15.133.1-microsoft-standa..., moz:processID: 139, moz:profile: /tmp/rust_mozprofiletEvvA3, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidi: ws://172.21.0.4:4444/sessio..., se:cdp: ws://172.21.0.4:4444/sessio..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://172.21.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d9b0ac27-22d6-4ef5-8eca-4371ef9d6227
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at com.searchmodule.pages.SearchPage.doSearch(SearchPage.java:43)
+at com.searchmodule.tests.SearchTest.search(SearchTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@6b4a4e18]" started-at="2023-11-22T16:33:47 GMT" name="quitDriver" finished-at="2023-11-22T16:33:49 GMT" duration-ms="2303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-java -->
+    <test started-at="2023-11-22T16:33:50 GMT" name="search-test-qa" finished-at="2023-11-22T16:34:06 GMT" duration-ms="16474">
+      <class name="com.searchmodule.tests.SearchTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@1fe20588]" started-at="2023-11-22T16:33:50 GMT" name="setupDriver" finished-at="2023-11-22T16:33:59 GMT" duration-ms="9268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="search(java.lang.String)[pri:0, instance:com.searchmodule.tests.SearchTest@1fe20588]" started-at="2023-11-22T16:33:59 GMT" name="search" finished-at="2023-11-22T16:34:05 GMT" duration-ms="5591" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #search_button_homepage
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '17-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bf6100f-4dfc-4f77-8602-148bc3705346, findElement {using=id, value=search_button_homepage}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:debuggerAddress: 127.0.0.1:9480, moz:firefoxOptions: {}, moz:geckodriverVersion: 0.32.1, moz:headless: false, moz:platformVersion: 5.15.133.1-microsoft-standa..., moz:processID: 378, moz:profile: /tmp/rust_mozprofileRsmH9w, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidi: ws://172.21.0.4:4444/sessio..., se:cdp: ws://172.21.0.4:4444/sessio..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://172.21.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bf6100f-4dfc-4f77-8602-148bc3705346]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #search_button_homepage
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.133.1-microsoft-standard-WSL2', java.version: '17-ea'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bf6100f-4dfc-4f77-8602-148bc3705346, findElement {using=id, value=search_button_homepage}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:debuggerAddress: 127.0.0.1:9480, moz:firefoxOptions: {}, moz:geckodriverVersion: 0.32.1, moz:headless: false, moz:platformVersion: 5.15.133.1-microsoft-standa..., moz:processID: 378, moz:profile: /tmp/rust_mozprofileRsmH9w, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidi: ws://172.21.0.4:4444/sessio..., se:cdp: ws://172.21.0.4:4444/sessio..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://172.21.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bf6100f-4dfc-4f77-8602-148bc3705346
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at com.searchmodule.pages.SearchPage.doSearch(SearchPage.java:43)
+at com.searchmodule.tests.SearchTest.search(SearchTest.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.TestNG.privateMain(TestNG.java:1414)
+at org.testng.TestNG.main(TestNG.java:1378)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.searchmodule.tests.SearchTest@1fe20588]" started-at="2023-11-22T16:34:05 GMT" name="quitDriver" finished-at="2023-11-22T16:34:06 GMT" duration-ms="1607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-qa -->
+  </suite> <!-- search-module -->
+</testng-results>

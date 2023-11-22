@@ -1,0 +1,52 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub
+    ports:
+      - "4444:4444"
+    #   - "4443:4443"
+    #   - "4442:4442"
+  chrome:
+    image: selenium/node-chrome
+    shm_size: '1g'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  firefox:
+    image: selenium/node-firefox
+    shm_size: '1g'
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  search-module:
+    image: kliffordagujar/selenium-docker-udemy
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=firefox
+      - HUB_HOST=hub
+      - MODULE=search-module.xml
+    volumes:
+      - ./search-result:/usr/share/udemy/test-output
+  book-flight-module:
+    image: kliffordagujar/selenium-docker-udemy
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - MODULE=book-flight-module.xml
+    volumes:
+      - ./book-flight-result:/usr/share/udemy/test-output
